@@ -1,0 +1,74 @@
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.block {
+    background-color: #adadad;
+    color: white;
+    padding-left: 10px;
+    height: 100px;
+}
+
+hr {
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.info {
+    font-size: 12px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.main {
+    padding-right: 140px;
+    padding-left: 140px;
+}
+
+.block-four {
+    background-color: #adadad;
+    color: white;
+    height: 250px;
+    margin: 10px;
+    padding-left: 10px;
+}
+.color-dark {
+    background-color: #5b5b5b;
+    color: white;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.color-light-dark {
+    background-color: #c0c0c0;
+    color: white;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.block-five {
+    height: 160px;
+}
+.block-six {
+    margin: 10px;
+    height: 80px;
+}
+.block-seven {
+    height: 140px;
+    margin-top: 50px;
+}
+
+.block-eight {
+    height: 180px;
+}
+
+.block-ten {
+    height: 140px;
+}
+
+.block-eleven {
+    height: 60px;
+}
+
