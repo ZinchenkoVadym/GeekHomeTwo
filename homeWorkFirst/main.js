@@ -1,4 +1,4 @@
-// 1. Задание №1
+// 1. Task One
 
 let masOne = [3, 0, -5, 1, 44, -12, 3, 0, 0, 1, 2, -3, -3, 2, 1, 4, -2, -3, -1];
 let masTwo = [-1, -8, -2];
@@ -15,16 +15,11 @@ function maximalElementArr(array) {
     return max;
 }
 
-let maxElementOne = maximalElementArr(masOne);
-let maxElementTwo = maximalElementArr(masTwo);
-let maxElementThree = maximalElementArr(masThree);
-let maxElementFour = maximalElementArr(masFour);
-let maxElementFive = maximalElementArr(masFive);
-console.log(maxElementOne);
-console.log(maxElementTwo);
-console.log(maxElementThree);
-console.log(maxElementFour);
-console.log(maxElementFive);
+console.log(maximalElementArr(masOne));
+console.log(maximalElementArr(masTwo));
+console.log(maximalElementArr(masThree));
+console.log(maximalElementArr(masFour));
+console.log(maximalElementArr(masFive));
 
 function minElementArr(array) {
     let min = array[0];
@@ -35,41 +30,34 @@ function minElementArr(array) {
     return min;
 }
 
-let minElementOne = minElementArr(masOne);
-let minElementTwo = minElementArr(masTwo);
-let minElementThree = minElementArr(masThree);
-let minElementFour = minElementArr(masFour);
-let minElementFive = minElementArr(masFive);
-console.log(minElementOne);
-console.log(minElementTwo);
-console.log(minElementThree);
-console.log(minElementFour);
-console.log(minElementFive);
+console.log(minElementArr(masOne));
+console.log(minElementArr(masTwo));
+console.log(minElementArr(masThree));
+console.log(minElementArr(masFour));
+console.log(minElementArr(masFive));
 
 function sumElementMas(array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
+        if (array[0] === true) {
+
+        }
         sum += array[i];
     }
     return sum;
 }
 
-let sumElementOne = sumElementMas(masOne);
-let sumElementTwo = sumElementMas(masTwo);
-let sumElementThree = sumElementMas(masThree);
-let sumElementFour = sumElementMas(masFour);
-let sumElementFive = sumElementMas(masFive);
-console.log(sumElementOne);
-console.log(sumElementTwo);
-console.log(sumElementThree);
-console.log(sumElementFour);
-console.log(sumElementFive);
+console.log(sumElementMas(masOne));
+console.log(sumElementMas(masTwo));
+console.log(sumElementMas(masThree));
+console.log(sumElementMas(masFour));
+console.log(sumElementMas(masFive));
 
-// 2. Задание №2
+// 2. Task Two
 
 let arrayOne = [2, 1, 5, 0, 3, 4, 7, 2, 3, 1, 0];
 
-function calcualate(array) {
+function calculate(array) {
     let leftMax = 0;
     let rightMax = 0;
     let left = 0;
@@ -94,5 +82,4 @@ function calcualate(array) {
     return result;
 }
 
-let resultOne = calcualate(arrayOne);
-console.log(resultOne)
+console.log(calculate(arrayOne))
