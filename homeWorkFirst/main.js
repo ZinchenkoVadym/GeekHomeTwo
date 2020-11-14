@@ -9,7 +9,7 @@ let masFive = [1, NaN, 3, 5, -3];
 function maximalElementArr(array) {
     let max = array[0];
     for (let i = 0; i < array.length; i++) {
-        if (i === false) {
+        if (!i) {
             continue;
         }
         if (max < array[i]) {
