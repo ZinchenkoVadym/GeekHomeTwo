@@ -1,74 +1,83 @@
-.header {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 150px;
-    padding-right: 150px;
+.header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
-
-.block {
-    background-color: #adadad;
+header {
+    margin: 15px;
+}
+.block-1 {
+    width: 200px;
+    height: 80px;
+    background: grey;
+    margin-right: 25px;
     color: white;
     padding-left: 10px;
-    height: 100px;
 }
 
-hr {
-    margin-right: 150px;
-    margin-left: 150px;
+.block-2 {
+    height: 80px;
+    background: grey;
+    flex-grow: 0.5;
+    margin-right: 25px;
+    color: white;
+    padding-left: 10px;
 }
-.info {
-    font-size: 12px;
-    text-align: right;
+
+.block-3 {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: grey;
+    flex-grow: 1;
+    color: white;
+    padding-left: 10px;
+}
+
+.block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 10px;
 }
 
-.main {
-    padding-right: 140px;
-    padding-left: 140px;
+main {
+    margin: 15px;
 }
-
-.block-four {
-    background-color: #adadad;
-    color: white;
-    height: 250px;
-    margin: 10px;
-    padding-left: 10px;
+.sidebar {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
 }
-.color-dark {
-    background-color: #5b5b5b;
-    color: white;
-    padding-left: 10px;
-    margin: 10px;
-}
-
-.color-light-dark {
-    background-color: #c0c0c0;
+.block-4 {
+    width: 250px;
+    height:280px;
+    background: grey;
+    margin-right: 25px;
     color: white;
     padding-left: 10px;
-    margin: 10px;
 }
 
-.block-five {
-    height: 160px;
-}
-.block-six {
-    margin: 10px;
-    height: 80px;
-}
-.block-seven {
-    height: 140px;
-    margin-top: 50px;
+.block-7 {
+    width: 250px;
+    height: 150px;
+    background: grey;
+    margin-right: 25px;
+    color: white;
+    padding-left: 10px;
+    margin-top: 70px;
 }
 
-.block-eight {
-    height: 180px;
+.info {
+
+
 }
 
-.block-ten {
-    height: 140px;
-}
+.block-5{
+    width: 1000px;
+    height: 150px;
+    background: grey;
+    color: white;
 
-.block-eleven {
-    height: 60px;
 }
-

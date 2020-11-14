@@ -30,6 +30,7 @@ function minElementArr(array) {
     return min;
 }
 
+
 console.log(minElementArr(masOne));
 console.log(minElementArr(masTwo));
 console.log(minElementArr(masThree));
@@ -39,13 +40,15 @@ console.log(minElementArr(masFive));
 function sumElementMas(array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
-        if (array[0] === true) {
-
+        if(array[i] === undefined || !array[i]) {
+            continue
         }
         sum += array[i];
     }
     return sum;
 }
+
+
 
 console.log(sumElementMas(masOne));
 console.log(sumElementMas(masTwo));
@@ -83,3 +86,4 @@ function calculate(array) {
 }
 
 console.log(calculate(arrayOne))
+
