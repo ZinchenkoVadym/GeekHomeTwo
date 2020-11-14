@@ -28,7 +28,7 @@ console.log(maximalElementArr(masFive));
 function minElementArr(array) {
     let min = array[0];
     for (let i = 0; i < array.length; i++) {
-        if (i === false) {
+        if (!i) {
             continue;
         }
         if (min > array[i]) {
