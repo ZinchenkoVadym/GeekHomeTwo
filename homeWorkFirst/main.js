@@ -8,10 +8,14 @@ let masFive = [1, NaN, 3, 5, -3];
 
 function maximalElementArr(array) {
     let max = array[0];
-    for (let i = 0; i < array.length; i++)
+    for (let i = 0; i < array.length; i++) {
+        if (i === false) {
+            continue;
+        }
         if (max < array[i]) {
             max = array[i];
         }
+    }
     return max;
 }
 
@@ -23,10 +27,14 @@ console.log(maximalElementArr(masFive));
 
 function minElementArr(array) {
     let min = array[0];
-    for (let i = 0; i < array.length; i++)
+    for (let i = 0; i < array.length; i++) {
+        if (i === false) {
+            continue;
+        }
         if (min > array[i]) {
             min = array[i]
         }
+    }
     return min;
 }
 
@@ -40,8 +48,8 @@ console.log(minElementArr(masFive));
 function sumElementMas(array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
-        if(array[i] === undefined || !array[i]) {
-            continue
+        if (!array[i]) {
+            continue;
         }
         sum += array[i];
     }
@@ -86,4 +94,6 @@ function calculate(array) {
 }
 
 console.log(calculate(arrayOne))
+
+
 
