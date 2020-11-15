@@ -8,15 +8,16 @@ let masFive = [1, NaN, 3, 5, -3];
 
 function maximalElementArr(array) {
     let max = array[0];
-    for (let i = 0; i < array.length; i++) {
-        let number = array[i];
-        if (typeof number === 'number' && !isNaN(number) && max < number){
-            max = number;
+    if (max === 'number' && !isNaN(max)) {
+        for (let i = 0; i < array.length; i++) {
+            let number = array[i];
+            if (typeof number === 'number' && !isNaN(number)) {
+                max = number;
+            }
         }
     }
     return max;
 }
-
 
 console.log(maximalElementArr(masOne));
 console.log(maximalElementArr(masTwo));
@@ -26,14 +27,17 @@ console.log(maximalElementArr(masFive));
 
 function minElementArr(array) {
     let min = array[0];
-    for (let i = 0; i < array.length; i++) {
-        let number = array[i];
-        if (typeof number === 'number' && !isNaN(number) && min > number){
-            min = number;
+    if (typeof min === 'number' && !isNaN(min)) {
+        for (let i = 0; i < array.length; i++) {
+            let number = array[i];
+            if (typeof number === 'number' && !isNaN(number) && min > number) {
+                min = number;
+            }
         }
     }
-return min;
+    return min;
 }
+
 console.log(minElementArr(masOne));
 console.log(minElementArr(masTwo));
 console.log(minElementArr(masThree));
@@ -45,14 +49,12 @@ function sumElementMas(array) {
     for (let i = 0; i < array.length; i++) {
         let number = array[i]
         if (typeof number === 'number' && !isNaN(number)) {
-                 sum = number + sum;
+            sum = sum + number;
         }
 
     }
     return sum;
 }
-
-
 
 console.log(sumElementMas(masOne));
 console.log(sumElementMas(masTwo));
@@ -71,14 +73,14 @@ function calculate(array) {
     let right = array.length - 1;
     let result = 0;
 
-    while(left < right) {
-        if(array[left] > leftMax) {
+    while (left < right) {
+        if (array[left] > leftMax) {
             leftMax = array[left];
         }
-        if(array[right] > rightMax) {
+        if (array[right] > rightMax) {
             rightMax = array[right];
         }
-        if(leftMax >= rightMax) {
+        if (leftMax >= rightMax) {
             result = result + rightMax - array[right];
             right = right - 1;
         } else {
