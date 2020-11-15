@@ -1,4 +1,4 @@
-// 1. Task One
+// // 1. Task One
 
 let masOne = [3, 0, -5, 1, 44, -12, 3, 0, 0, 1, 2, -3, -3, 2, 1, 4, -2, -3, -1];
 let masTwo = [-1, -8, -2];
@@ -7,10 +7,10 @@ let masFour = [1, undefined, 3, 5, -3];
 let masFive = [1, NaN, 3, 5, -3];
 
 function maximalElementArr(array) {
-    let max = 0;
+    let max = array[0];
     for (let i = 0; i < array.length; i++) {
-        let number = array[i]
-        if (number && max < number) {
+        let number = array[i];
+        if (typeof number === 'number' && !isNaN(number) && max < number){
             max = number;
         }
     }
@@ -27,15 +27,13 @@ console.log(maximalElementArr(masFive));
 function minElementArr(array) {
     let min = array[0];
     for (let i = 0; i < array.length; i++) {
-        let number = array[i]
-        if (number && min > number) {
+        let number = array[i];
+        if (typeof number === 'number' && !isNaN(number) && min > number){
             min = number;
         }
     }
-    return min;
+return min;
 }
-
-
 console.log(minElementArr(masOne));
 console.log(minElementArr(masTwo));
 console.log(minElementArr(masThree));
@@ -46,9 +44,10 @@ function sumElementMas(array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
         let number = array[i]
-        if (number) {
-            sum += number
+        if (typeof number === 'number' && !isNaN(number)) {
+                 sum = number + sum;
         }
+
     }
     return sum;
 }
