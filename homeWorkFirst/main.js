@@ -6,12 +6,12 @@ let masThree = [1, 7, 3];
 let masFour = [1, undefined, 3, 5, -3];
 let masFive = [1, NaN, 3, 5, -3];
 
-function maximalElementArr(array) {
+function maxElementArr(array) {
     let max = array[0];
-    if (max === 'number' && !isNaN(max)) {
+    if (typeof max === 'number' && !isNaN(max)) {
         for (let i = 0; i < array.length; i++) {
             let number = array[i];
-            if (typeof number === 'number' && !isNaN(number)) {
+            if (typeof number === 'number' && !isNaN(number) && max < number) {
                 max = number;
             }
         }
@@ -19,11 +19,11 @@ function maximalElementArr(array) {
     return max;
 }
 
-console.log(maximalElementArr(masOne));
-console.log(maximalElementArr(masTwo));
-console.log(maximalElementArr(masThree));
-console.log(maximalElementArr(masFour));
-console.log(maximalElementArr(masFive));
+console.log(maxElementArr(masOne));
+console.log(maxElementArr(masTwo));
+console.log(maxElementArr(masThree));
+console.log(maxElementArr(masFour));
+console.log(maxElementArr(masFive));
 
 function minElementArr(array) {
     let min = array[0];
