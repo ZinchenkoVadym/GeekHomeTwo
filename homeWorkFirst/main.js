@@ -7,11 +7,11 @@ let masFour = [1, undefined, 3, 5, -3];
 let masFive = [1, NaN, 3, 5, -3];
 
 function maxElementArr(array) {
-    let max = array[0];
-    if (typeof max === 'number' && !isNaN(max)) {
-        for (let i = 0; i < array.length; i++) {
-            let number = array[i];
-            if (typeof number === 'number' && !isNaN(number) && max < number) {
+    let max = undefined;
+    for (let i = 0; i < array.length; i++) {
+        let number = array[i];
+        if (typeof number === 'number' && !isNaN(number)) {
+            if (typeof max === 'undefined' || max < number) {
                 max = number;
             }
         }
@@ -26,11 +26,11 @@ console.log(maxElementArr(masFour));
 console.log(maxElementArr(masFive));
 
 function minElementArr(array) {
-    let min = array[0];
-    if (typeof min === 'number' && !isNaN(min)) {
-        for (let i = 0; i < array.length; i++) {
-            let number = array[i];
-            if (typeof number === 'number' && !isNaN(number) && min > number) {
+    let min = undefined;
+    for (let i = 0; i < array.length; i++) {
+        let number = array[i];
+        if (typeof number === 'number' && !isNaN(number)) {
+            if (typeof min === 'undefined' || min > number) {
                 min = number;
             }
         }
