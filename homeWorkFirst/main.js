@@ -1,4 +1,4 @@
-// // 1. Task One
+// 1. Task One
 
 let masOne = [3, 0, -5, 1, 44, -12, 3, 0, 0, 1, 2, -3, -3, 2, 1, 4, -2, -3, -1];
 let masTwo = [-1, -8, -2];
@@ -92,7 +92,5 @@ function calculate(array) {
 }
 
 console.log(calculate(arrayOne))
-
-
 
 
