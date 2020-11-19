@@ -1,4 +1,5 @@
-//1. Task one
+// 1. Task one
+
 function customCycle(result, numberOfIterations) {
     if (numberOfIterations === 1) {
         return result;
@@ -7,3 +8,5 @@ function customCycle(result, numberOfIterations) {
         return finalResult;
     }
 }
+
+console.log(customCycle(3, 3));

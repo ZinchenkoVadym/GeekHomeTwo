@@ -11,7 +11,7 @@ class Calculate {
     }
 
     multiply(numNext){
-        this.number = this.number + numNext;
+        this.number = this.number * numNext;
         return this;
     }
 
