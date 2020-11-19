@@ -13,5 +13,4 @@ function sum(a) {
     }
     return result;
 }
-
 console.log(sum(1)(2)(3));

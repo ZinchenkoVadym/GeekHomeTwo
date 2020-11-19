@@ -1,5 +1,4 @@
 //4. Task four
-
 class Calculate {
     constructor(num) {
         this.number = num;
