@@ -66,7 +66,6 @@ class Tamagochi {
         this.drink = this.drink + 50;
     }
 
-
     Sleep() {
         let myTimer = setInterval(() => {
             this.sleep = this.sleep - 1;
@@ -121,10 +120,6 @@ class Tamagochi {
         this.dance = this.dance + 50;
     }
 }
-
-
-
-
 
 let tamagochik = new Tamagochi();
 tamagochik.Health();
