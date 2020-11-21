@@ -20,3 +20,4 @@ class Calculate {
 }
 let calculate = new Calculate(3);
 console.log(calculate.add(2).multiply(2).result());
+
