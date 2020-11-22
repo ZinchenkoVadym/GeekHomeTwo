@@ -10,3 +10,4 @@ function customCycle(result, numberOfIterations) {
 }
 
 console.log(customCycle(3, 5));
+
