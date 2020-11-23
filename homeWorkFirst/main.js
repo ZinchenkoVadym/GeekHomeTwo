@@ -92,5 +92,3 @@ function calculate(array) {
 }
 
 console.log(calculate(arrayOne))
-
-
