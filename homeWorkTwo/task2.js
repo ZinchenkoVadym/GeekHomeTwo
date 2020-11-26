@@ -12,7 +12,7 @@ class Tamagochi {
 
     }
 
-    Health() {
+    healthTom() {
         let myTimer = setInterval(() => {
             this.health = this.health - 1;
             console.log(this.health);
@@ -30,7 +30,7 @@ class Tamagochi {
         this.health = this.health + 50;
     }
 
-    Eat() {
+    eatTom() {
         let myTimer = setInterval(() => {
             this.eat = this.eat - 1;
             console.log(this.eat);
@@ -48,7 +48,7 @@ class Tamagochi {
         this.eat = this.eat + 50;
     }
 
-    Drink() {
+    drinkTom() {
         let myTimer = setInterval(() => {
             this.drink = this.drink - 1;
             console.log(this.drink);
@@ -66,7 +66,7 @@ class Tamagochi {
         this.drink = this.drink + 50;
     }
 
-    Sleep() {
+    sleepTom() {
         let myTimer = setInterval(() => {
             this.sleep = this.sleep - 1;
             console.log(this.sleep);
@@ -84,7 +84,7 @@ class Tamagochi {
         this.sleep = this.sleep + 50;
     }
 
-    Walk() {
+    walkTom() {
         let myTimer = setInterval(() => {
             this.walk = this.walk - 1;
             console.log(this.walk);
@@ -102,7 +102,7 @@ class Tamagochi {
         this.walk = this.walk + 50;
     }
 
-    Dance() {
+    danceTom() {
         let myTimer = setInterval(() => {
             this.dance= this.dance - 1;
             console.log(this.dance);
@@ -122,12 +122,12 @@ class Tamagochi {
 }
 
 let tamagochik = new Tamagochi();
-tamagochik.Health();
-tamagochik.Eat();
-tamagochik.Drink();
-tamagochik.Sleep();
-tamagochik.Walk();
-tamagochik.Dance();
+tamagochik.healthTom();
+tamagochik.eatTom();
+tamagochik.drinkTom();
+tamagochik.sleepTom();
+tamagochik.walkTom();
+tamagochik.danceTom();
 tamagochik.toHealth();
 tamagochik.toEat();
 tamagochik.toDrink();
