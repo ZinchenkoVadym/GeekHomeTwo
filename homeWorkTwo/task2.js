@@ -134,3 +134,4 @@ tamagochik.toDrink();
 tamagochik.toSleep();
 tamagochik.toWalk();
 tamagochik.toDance();
+
