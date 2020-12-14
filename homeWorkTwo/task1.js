@@ -1,13 +1,13 @@
 //1. Task one
 
-function customCycle(result, numberOfIterations) {
-    if (numberOfIterations === 1) {
-        return result;
-    } else {
-        let finalResult = result * customCycle(result, numberOfIterations - 1);
-        return finalResult;
+function myFor(element, limit, callback) {
+    if (limit === 0) {
+        return;
     }
+    callback(element);
+    return myFor(element, --limit, callback)
 }
 
-console.log(customCycle(3, 5));
-
+myFor(1, 10, function(element) {
+    console.log(element)
+})
