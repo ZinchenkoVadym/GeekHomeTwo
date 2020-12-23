@@ -82,6 +82,16 @@ function indexOf (array, searchElement) {
 
 console.log(indexOf([1, 3, 5, 1124, 6, 123, 12345, 12, 34 ,123 , 5123 ,5, false], false));
 
+function isPalindrome(str) {
+    let len = str.length
+    for(let i=0; i<(len/2); i++){
+        if(str[i] !== str[len-i-1])
+            return false
+    }
+    return true
+}
+
+console.log(isPalindrome('ewe'))
 
 
 function missing(array) {
