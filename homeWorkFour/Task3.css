@@ -3,6 +3,8 @@ div {
 }
 
 .tagging-wrapper {
+    background-image: url("./image.jpg");
+    background-position: center;
     width: 512px;
     height: 512px;
     border: 2px solid black;
@@ -15,17 +17,25 @@ div {
 .tagging-wrapper .tagging-element {
     position: absolute;
     border-radius: 5px;
-    background-color: rgba(34,34,34,.75);
+    background-color: green;
     opacity: .9;
     border: 1px solid #000;
     cursor: pointer;
 }
 
-.hide{
+.tagging-wrapper .tagging-title {
+    padding: 10px;
+    display: inline-block;
+}
+
+.tagging-wrapper .tagging-element .delete {
     visibility: hidden;
 }
-.grab-mode {
-    z-index: 16777270!important;
+
+
+.tagging-wrapper .tagging-element.grab-mode .delete {
+    visibility: visible;
+    padding: 10px;
+    padding-left: 0;
+
 }
-
-
